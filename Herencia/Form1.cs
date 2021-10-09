@@ -19,7 +19,17 @@ namespace Herencia
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            dog dog = new dog();
 
+
+            dog.animalLegs = 4;
+            dog.animalSpecies = "pitbull";
+            dog.animalEat = false;
+
+            MessageBox.Show(dog.getInfo());
+            MessageBox.Show(dog.species());
+
+            MessageBox.Show(dog.comer());
         }
     }
 }
